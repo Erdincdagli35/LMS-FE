@@ -1,0 +1,27 @@
+<div class="form-container">
+    <h3>Shelf: update</h3>
+    <hr>
+    <form>
+        <div class="form-field">
+            <label>Name: </label>
+            <input type="text" id="name" [(ngModel)]="shelf.name" name="name" required>
+        </div>
+        <div class="form-field">
+            <label>Storage: </label>
+            <input type="text" id="Storage" [(ngModel)]="shelf.storage" name="storage" required>
+        </div>
+        <div class="form-field">
+            <b><label>Capacity</label></b>
+            <label>{{shelf.libraryCapacity}}</label>
+        </div>
+        <div class="form-field">
+            <b><label>Current Capacity</label></b>
+            <label>{{shelf.libraryCurrentCapacity}}</label>
+        </div>
+        <div class="form-buttons">
+            <button class="btn btn-success" type="submit" (click)="onSubmit()">Update</button>
+            <button class="btn btn-success" type="reset">Reset</button>
+            <button class="btn btn-success" type="submit" (click)="goToList()">Shelves</button>
+          </div>
+    </form>
+</div>

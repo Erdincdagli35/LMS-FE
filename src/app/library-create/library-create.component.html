@@ -1,0 +1,19 @@
+<div class="form-container">
+    <h3>Library: create</h3>
+    <hr>
+    <form>
+    <div class="form-field">
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" [(ngModel)]="library.name" required>
+      </div>
+      <div class="form-field">
+        <label for="capacity">Capacity :</label>
+        <input type="text" id="capacity" name="capacity" [(ngModel)]="library.capacity" required>
+      </div>
+      <div class="form-buttons">
+        <button class="btn btn-success" type="submit" (click)="onSubmit()">Create</button>
+        <button class="btn btn-success" type="reset">Reset</button>
+        <button class="btn btn-success" type="submit" (click)="goToLibraryList()">Libraries</button>
+      </div>
+    </form>
+  </div>

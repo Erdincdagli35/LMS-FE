@@ -1,0 +1,22 @@
+<hr>
+    <table>
+        <thead>
+        <tr>
+            <th>ID: </th>
+            <th>Name: </th>
+            <th>Storage: </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{shelf.id}}</td>
+                <td>{{shelf.name}}</td>
+                <td>{{shelf.storage}}</td>
+            </tr>
+            <tr>
+                <div class="form-buttons">
+                    <td><button (click)="onSubmit()" class="btn btn-info">Shelves</button></td>
+                </div>
+            </tr>
+        </tbody>
+    </table>
