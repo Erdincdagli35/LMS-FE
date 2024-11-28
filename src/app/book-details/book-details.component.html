@@ -1,0 +1,24 @@
+<hr>    
+    <table>
+        <thead>
+        <tr>
+            <th>ID: </th>
+            <th>Name: </th>
+            <th>Author: </th>
+            <th>Page Number: </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>{{book.id}}</th>
+                <td>{{book.name}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.pageNumber}}</td>
+            </tr>
+            <tr>
+                <div class="form-buttons">
+                    <td><button (click)="onSubmit()" class="btn btn-info">Books</button></td>
+                </div>
+            </tr>
+        </tbody>
+    </table>
