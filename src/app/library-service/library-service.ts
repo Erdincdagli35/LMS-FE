@@ -10,12 +10,12 @@ import { Shelf } from '../models/shelf';
 })
 export class LibraryService {
 
-  private baseURL = "https://lms-be.up.railway.app/libraries";
-  private deleteURL = "https://lms-be.up.railway.app/libraries";
+  private baseURL = "https://lmss-be.up.railway.app/libraries";
+  private deleteURL = "https://lmss-be.up.railway.app/libraries";
 
-  private addToShelfURL = "https://lms-be.up.railway.app/libraries/addShelf";
-  private removeToShelfURL = "https://lms-be.up.railway.app/libraries/removeShelf";
-  private removeAllShevesURL = "https://lms-be.up.railway.app/libraries/removeAllShelf";
+  private addToShelfURL = "https://lmss-be.up.railway.app/libraries/addShelf";
+  private removeToShelfURL = "https://lmss-be.up.railway.app/libraries/removeShelf";
+  private removeAllShevesURL = "https://lmss-be.up.railway.app/libraries/removeAllShelf";
 
   constructor(private httpClient: HttpClient) { }
 
