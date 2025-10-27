@@ -9,8 +9,8 @@ import { Shelf } from '../models/shelf';
   providedIn: 'root'
 })
 export class ShelfService {
-  private baseURL = "https://librarymanagementsystem-be.up.railway.app/shelves";
-  private addToShelfURL = "https://librarymanagementsystem-be.up.railway.app/shelves/addBook";
+  private baseURL = "https://lms-be.up.railway.app/shelves";
+  private addToShelfURL = "https://lms-be.up.railway.app/shelves/addBook";
 
   constructor(private httpClient: HttpClient) { }
 
