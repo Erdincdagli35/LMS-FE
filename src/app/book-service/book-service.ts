@@ -8,7 +8,7 @@ import { Book } from '../models/book';
   providedIn: 'root'
 })
 export class BookService {
-  private baseURL = "https://lms-be.up.railway.app/books";
+  private baseURL = "https://lmss-be.up.railway.app/books";
   
   constructor(private httpClient: HttpClient) { }
 
