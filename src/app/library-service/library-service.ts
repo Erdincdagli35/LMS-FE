@@ -10,12 +10,12 @@ import { Shelf } from '../models/shelf';
 })
 export class LibraryService {
 
-  private baseURL = "http://localhost:9090/libraries";
-  private deleteURL = "http://localhost:9090/libraries";
+  private baseURL = "https://librarymanagementsystem-be.up.railway.app/libraries";
+  private deleteURL = "https://librarymanagementsystem-be.up.railway.app/libraries";
 
-  private addToShelfURL = "http://localhost:9090/libraries/addShelf";
-  private removeToShelfURL = "http://localhost:9090/libraries/removeShelf";
-  private removeAllShevesURL = "http://localhost:9090/libraries/removeAllShelf";
+  private addToShelfURL = "https://librarymanagementsystem-be.up.railway.app/libraries/addShelf";
+  private removeToShelfURL = "https://librarymanagementsystem-be.up.railway.app/libraries/removeShelf";
+  private removeAllShevesURL = "https://librarymanagementsystem-be.up.railway.app/libraries/removeAllShelf";
 
   constructor(private httpClient: HttpClient) { }
 
