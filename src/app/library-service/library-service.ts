@@ -10,12 +10,12 @@ import { Shelf } from '../models/shelf';
 })
 export class LibraryService {
 
-  private baseURL = "https://lmss-be.up.railway.app/libraries";
-  private deleteURL = "https://lmss-be.up.railway.app/libraries";
+  private baseURL = "https://library-ms-be.up.railway.app/libraries";
+  private deleteURL = "https://library-ms-be.up.railway.app/libraries";
 
-  private addToShelfURL = "https://lmss-be.up.railway.app/libraries/addShelf";
-  private removeToShelfURL = "https://lmss-be.up.railway.app/libraries/removeShelf";
-  private removeAllShevesURL = "https://lmss-be.up.railway.app/libraries/removeAllShelf";
+  private addToShelfURL = "https://library-ms-be.railway.app/libraries/addShelf";
+  private removeToShelfURL = "https://library-ms-be.railway.app/libraries/removeShelf";
+  private removeAllShevesURL = "https://library-ms-be.railway.app/libraries/removeAllShelf";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -34,7 +34,7 @@ export class LibraryService {
   getLibraryById(id: number): Observable<Library> {
     return this.httpClient.get<Library>(`${this.baseURL}/${id}`);
   }
-  
+
   updateLibrary(library: Library): Observable<Object> {
     return this.httpClient.put(this.baseURL, library);
   }

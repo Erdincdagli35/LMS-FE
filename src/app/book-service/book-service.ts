@@ -8,8 +8,8 @@ import { Book } from '../models/book';
   providedIn: 'root'
 })
 export class BookService {
-  private baseURL = "https://lmss-be.up.railway.app/books";
-  
+  private baseURL = "https://library-ms-be.up.railway.app/books";
+
   constructor(private httpClient: HttpClient) { }
 
   getBookList(): Observable<Book[]> {
@@ -23,7 +23,7 @@ export class BookService {
   getBookById(id: number): Observable<Book> {
     return this.httpClient.get<Book>(`${this.baseURL}/${id}`);
   }
-  
+
   updateBook(book: Book): Observable<Object> {
     return this.httpClient.put(this.baseURL, book);
   }

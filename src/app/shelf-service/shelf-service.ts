@@ -9,8 +9,8 @@ import { Shelf } from '../models/shelf';
   providedIn: 'root'
 })
 export class ShelfService {
-  private baseURL = "https://lmss-be.up.railway.app/shelves";
-  private addToShelfURL = "https://lmss-be.up.railway.app/shelves/addBook";
+  private baseURL = "https://library-ms-be.up.railway.app/shelves";
+  private addToShelfURL = "https://library-ms-be.up.railway.app/shelves/addBook";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -25,7 +25,7 @@ export class ShelfService {
   getShelfById(id: number): Observable<Shelf> {
     return this.httpClient.get<Shelf>(`${this.baseURL}/${id}`);
   }
-  
+
   updateShelf(shelf: Shelf): Observable<Object> {
     return this.httpClient.put(this.baseURL, shelf);
   }
