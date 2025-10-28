@@ -56,7 +56,7 @@ body {font-family: "Lato", sans-serif}
             </div>
             </div>
             <div class="w3-third w3-margin-bottom">
-            <img src="https://www.labnol.org/images/2008/wikipedia-books.jpg" alt="Book" style="width:100%" class="w3-hover-opacity">
+            <img src="../assets/books.avif" alt="Book" style="width:100%" class="w3-hover-opacity">
             <div class="w3-container w3-white">
                 <p><b>Book</b></p>
                 <p>Present the books and other process for books</p>
@@ -70,7 +70,7 @@ body {font-family: "Lato", sans-serif}
     </div>
 
     <router-outlet></router-outlet>
-    
+
     <!-- The Contact Section -->
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
         <h2 class="w3-wide w3-center">CONTACT</h2>
@@ -96,7 +96,7 @@ body {font-family: "Lato", sans-serif}
         </div>
         </div>
     </div>
-    
+
     <!-- End Page Content -->
     </div>
 
@@ -125,12 +125,12 @@ body {font-family: "Lato", sans-serif}
     var i;
     var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+        x[i].style.display = "none";
     }
     myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
     }
 
     // Used to toggle the menu on small screens when clicking on the menu button
@@ -138,7 +138,7 @@ body {font-family: "Lato", sans-serif}
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else { 
+    } else {
         x.className = x.className.replace(" w3-show", "");
     }
     }
